@@ -1,0 +1,6 @@
+{
+  "name": "3D Weather Dashboard",
+  "description": "Real-time immersive 3D weather dashboard with interactive scroll depth, atmospheric animations, and global forecasts.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
