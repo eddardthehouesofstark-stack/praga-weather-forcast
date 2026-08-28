@@ -131,6 +131,34 @@ A real-time meteorological web application combining real-time Open-Meteo REST A
 
 ---
 
+## 🚀 CI/CD & Automated GitHub Actions Deployment
+
+The repository includes a ready-to-use GitHub Actions workflow located at `.github/workflows/deploy.yml` that automatically builds, tests, and deploys the application to **GitHub Pages** whenever you push to `main` or `master`.
+
+### One-Time Setup on GitHub:
+
+1. **Push your code to GitHub**:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+   git push -u origin main
+   ```
+
+2. **Enable GitHub Pages**:
+   - Go to your repository on GitHub.
+   - Navigate to **Settings** > **Pages** (under the "Code and automation" sidebar).
+   - Under **Build and deployment** > **Source**, select **GitHub Actions**.
+
+3. **Automatic Deployment**:
+   - The `.github/workflows/deploy.yml` pipeline will trigger automatically on every push.
+   - Your live site will be published at `https://<your-username>.github.io/<your-repo-name>/`.
+   - You can also manually trigger a deployment from the **Actions** tab via `workflow_dispatch`.
+
+---
+
 ## 📡 API Reference & Integration
 
 The application integrates with the public **Open-Meteo** API suite without requiring private API tokens:
